@@ -1,74 +1,105 @@
 <html lang="da">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        
-        <title>Cocio Hot Chocolate</title>
-        <link rel="stylesheet" href="cociodesign.css"> 
-    
-    </head>
-    <body onload="alert('Dette website er en del af et studieprojekt på multimediedesigneruddannelsen!')">
-        <div id="pagewrap">
-                <header id="header">
-                <div>
-                    <img id="logo" src="PC/cocio.png">
-                    <div class="topnav" id="mytopnav">   
-                            <a href="#opskrift">Opskrifter</a>   
-                            <a href="#konkurrence">Konkurrence</a> 
-                            <a href="#utz">UTZ</a> 
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cocio Hot Chocolate</title>
+    <link rel="stylesheet" href="cociodesign.css">
+
+</head>
+
+<body>
+    <div id="pagewrap">
+        <header id="header">
+            <div>
+                <a href="#kon"><img id="logo" src="../PC/cocio.png"></a>
+                <div class="topnav" id="mytopnav">
+                    <a href="#banner1">Opskrifter</a>
+                    <a href="#banner2">Konkurrence</a>
+                    <a href="#banner3">UTZ</a>
                 </div>
-                       
-                </header>
-            
-                <br> <br> 
-            <nav id="billedenav"> 
-                <img id="kakao" src="PC/Opskrifter%20menu%20button.jpg">
-                <img id="kon" src="PC/konkurrencemenu.jpg">
-                <img id="utzzz" src="PC/utzmenu.jpg">
-            </nav>
-            
-            <section id="opskrift"> 
-                    <img id="banner1" src="PC/chocolatebanner.jpg">
-                <article id="opskrift1"> </article>
-                    <img id="peanut" src="PC/opskriftpeanutbutter.jpg">
-                <article id="opskrift2"> </article>
-                    <img id="hindbær" src="PC/opskrifthindb%C3%A6r.jpg">
-                <article id="opskrift3"> </article>
-                    <img id="karamel" src="PC/opskriftkaramel.jpg">
-            </section>            
-            
-            
-            <section id="konkurrence"> 
-                    <img id="banner2" src="PC/konkurrencebanner.jpg">
-                <form action="actionpage.php" method="get" id="konkurrencetekst">
-                    Kode: <input type="text" name="kode"> <br>
-                    Fornavn: <input type="text" name="fornavn"> <br>
-                    Efternavn: <input type="text" name="efternavn"> <br>
-                    Adresse: <input type="text" name="adresse"> <br>
-                    By: <input type="text" name="by"> <br>    
-                    Email: <input type="text" name="email"> <br>
-                    Telefon: <input type="text" name="telefon"> <br>
-                    <input type="submit" value="send">
-                </form>               
-            </section>
-                    <img src="PC/UTZ%20Banner.jpg">
-            <section id="utz"> 
-                <article id="utztekst"> <h1>Om UTZ-organisationen</h1> 
-                    <p>UTZ er et certificeret mærke som hjælper alle bønder til bedre levevilkår ved at give dem en uddannelse som giver bønderne en viden om hvad der kan være truende for deres landbrug, samt at sikre at de får solgt deres kakaobønner til bedre priser så de har råd til forbedre deres landbrug. UTZ vil være med til at bekæmpe børnearbejde samt forbedre kvaliteten af afgrøderne. De bønder der er fokus på med denne organisation er dem der beskæftiger sig med -kaffe og kakaobønner samt hasselnødder og te. Ved at købe UTZ certificerede produkter er man med til at støtte UTZ i deres arbejde på at fremme disse problemstillinger. Cocio er certificeret, for vi mener at det er vigtigt at kakao er af den bedste kvalitet samt at levevilkårerne blandt bønderne er gode. Vi har siden 2010 anvendt UTZ-certificeret kakao fra Elfenbenskysten og det vil vi fortsat gøre.</p>
-                    <p>Nedenfor i videoen kan du høre mere om hvem organisationen UTZ er og hvad de står for:</p>
-                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0C2XZ26cU8E" frameborder="0" gesture="media" allowfullscreen></iframe> 
-                </article>
-            </section>
-            
-           
+            </div>
+        </header>
+
+        <div id="gridwrap">
+            <article id="kakao"> <a href="#banner1"> <img src="../PC/Opskriftermenubutton.jpg"></a> </article>
+
+            <article id="kon"> <a href="#banner2"><img src="../PC/konkurrencemenu.jpg"></a> </article>
+
+            <article id="utzzz"> <a href="#banner3"><img src="../PC/utzmenu.jpg"></a> </article>
+
+            <section id="banner1"> <img src="../PC/chocolatebanner.jpg"> </section>
+
+            <article id="peanut"> <img src="../PC/opskriftpeanutbutter.jpg"> </article>
+
+            <article id="opskrift1" style="background-image: url(../PC/cociotekstbaggrund.jpg)">
+                <h2> Peanut butter Cocio </h2> 
+                <h4 id="ops"> Ingredienser:</h4>
+                <ul id="ops">
+                    <li>Cocio</li>
+                    <li>Cremet peanut butter</li>
+                    <li>1 plade chokolade</li>
+                    <li>½ tsk. vanilje</li>
+                </ul>  
+                <h4 id="ops"> Instruktioner:</h4>
+                <p id="ops">Opvarm kakao i en gryde og pisk 2 spsk. cremede peanut butter i. Hæld i to kopper og top af med peanut butter creme og hakket chokolade. </p>
+
+            </article>
+
+            <article id="opskrift2" style="background-image: url(../PC/cociotekstbaggrund.jpg)">
+                <h2> Hindbær Cocio </h2> 
+                <h4 id="ops"> Ingredienser: </h4>
+                <ul id="ops">
+                    <li>Cocio</li>
+                    <li>Friske hindbær</li>
+                    <li>Mini skumfiduser</li>
+                    <li>1/4 kop vand</li>
+                    <li>Sukker</li>
+                </ul> 
+                <h4 id="ops">Instruktioner:</h4> <p id="ops"> Mix hindbær, sukker og vand i en pande, og kog i 3 – 5 min. til blandingen bliver tykkere hvorefter du sier kernerne fra. Varm Cocio op, og pisk hindbærpurreren i kakaoen. Top op med mini skumfiduser eller flødeskum. </p>
+            </article>
+
+            <article id="hind"> <img src="../PC/opskrifthind.jpg"> </article>
+
+            <article id="karamel"> <img src="../PC/opskriftkaramel.jpg"> </article>
+
+            <article id="opskrift3" style="background-image: url(../PC/cociotekstbaggrund.jpg)">
+                <h2> Karamel Cocio </h2>  
+                <h4 id="ops">Ingredienser:</h4>
+                <ul id="ops">
+                    <li> Cocio </li>
+                    <li> Karamelsovs </li>
+                    <li> Sukker </li>
+                </ul>  
+                <h4 id="ops"> Instruktioner: </h4>
+                <p id="ops"> Pisk fløden til den begynder at blive tykkere, og tilføj da 1 tsk. sukker, og pisk til flødeskummet har den ønskede konsistens. Opvarm Cocio i en gryde, tilsæt karamel til den har den ønskede smag. Hæld Cocio’en op i to krus, og top dem op med flødeskummet. Hæld til sidst en smule karamel over flødeskummet.
+                </p>
+            </article>
+
+            <section id="banner2"> <img src="../PC/konkurrencebanner.jpg"> </section>
+
+            <form id="konkurrencetekst" action="actionpage.php" method="get">
+                Indtast kode<input id="kode" type="text" name="kode"> <br> Fornavn: <input type="text" name="fornavn"> Efternavn: <input type="text" name="efternavn"> <br> Adresse: <input type="text" name="adresse"> Postnummer: <input type="text" name="by"> <br> Email: <input type="text" name="email"> Telefon: <input type="text" name="telefon">
+                <input type="submit" value="send">
+            </form>
+
+            <section id="banner3"> <img src="../PC/UTZBanner.jpg"> </section>
+
+            <article id="utztekst">
+                <h1> Om UTZ-organisationen </h1>
+                <p id="omutz">UTZ er et certificeret mærke som hjælper alle bønder til bedre levevilkår ved at give dem en uddannelse som giver bønderne en viden om hvad der kan være truende for deres landbrug, samt at sikre at de får solgt deres kakaobønner til bedre priser så de har råd til forbedre deres landbrug. UTZ vil være med til at bekæmpe børnearbejde samt forbedre kvaliteten af afgrøderne. De bønder der er fokus på med denne organisation er dem der beskæftiger sig med -kaffe og kakaobønner samt hasselnødder og te. Ved at købe UTZ certificerede produkter er man med til at støtte UTZ i deres arbejde på at fremme disse problemstillinger. Cocio er certificeret, for vi mener at det er vigtigt at kakao er af den bedste kvalitet samt at levevilkårerne blandt bønderne er gode. Vi har siden 2010 anvendt UTZ-certificeret kakao fra Elfenbenskysten og det vil vi fortsat gøre.</p>
+                <p>I videoen kan du høre mere om hvem organisationen UTZ er og hvad de står for:</p>
+            </article>
+
+            <article id="utzvideo"> <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0C2XZ26cU8E" frameborder="0" gesture="media" allowfullscreen></iframe>
+            </article>
+
         </div>
-    </body>
+    </div>
+
+
+
+</body>
+
 </html>
-
-
-
-
-.

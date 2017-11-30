@@ -3,12 +3,6 @@
     position:fixed;
 }
 
-h1, h2, h3, h4, p, li, form {
-    font-family: Roboto;
-    src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
-    font-style:italic;
-}
-
 .topnav {
     height: 50px;
     background: #9bb6e5;
@@ -29,9 +23,6 @@ h1, h2, h3, h4, p, li, form {
     text-align: center; 
     margin: -40px;
     font-size: 40px;  
-    font-family: Roboto;
-    src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
-    font-style:italic;
     
 }
 
@@ -43,34 +34,18 @@ h1, h2, h3, h4, p, li, form {
 
 #kakao {
     grid-area: a;
-    margin-top: 40px;
 }
 
 #kon {
     grid-area: b;
-    margin-top: 40px;
 }
 
 #utzzz {
     grid-area: c;
-    margin-top: 40px;
 }
 
 #banner1 {
     grid-area: d;
-}
-
-h2 {
-    text-align: center;
-}
-
-h4 {
-}
-
-#ops {
-    margin: 80px;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 #opskrift1 {
@@ -85,7 +60,7 @@ h4 {
     grid-area: h;
 }
 
-#hind {
+#hindbær {
     grid-area: i;
 }
 
@@ -103,21 +78,7 @@ h4 {
 
 #konkurrencetekst {
     grid-area: m;
-    width: 100%;
-    height: 100%;
-    background-color: #c3c4c7;
 }
-
-input[type=text] {
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid red;
-    margin-top: 18px;
-    height: 5px;
-    border-radius: 100px;
-}
-
-
 
 #banner3 {
     grid-area: n;
@@ -125,29 +86,15 @@ input[type=text] {
 
 #utztekst {
     grid-area: o;
-    text-align: center;
-    background-image: url(../PC/utzbannerbaggrund.jpg);
-}
-
-#omutz {
-    margin: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #utzvideo {
     grid-area: p;
-    background-image: url(../PC/utzbannerbaggrund2.jpg);
-}
-
-#video {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;    
 }
 
 #gridwrap {
     display: grid;
+        grid-gap: 0 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
         grid-template-areas: 
@@ -159,15 +106,6 @@ input[type=text] {
         "l l l l l l"
         "m m m m m m"
         "n n n n n n"
-        "o o o p p p"
+        "o o o o p p"
             
 }
-
-img {
-    width: 100%;
-}
-
-#gridwrap section, #gridwrap article, #gridwrap form {
-    border-style: solid;
-} 
-
