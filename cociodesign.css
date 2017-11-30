@@ -1,21 +1,25 @@
+body {
+    background-color: black;
+}
+
 #header {
     width: 100%;
-    position:fixed;
+    position: fixed;
 }
 
 h1, h2, h3, h4, p, li, form {
     font-family: Roboto;
     src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
-    font-style:italic;
+    font-style: italic;
 }
 
 .topnav {
     height: 50px;
     background: #9bb6e5;
-    background: -webkit-linear-gradient(#9bb6e5, #d4daec); 
-    background: -o-linear-gradient(#9bb6e5, #d4daec); 
-    background: -moz-linear-gradient(#9bb6e5, #d4daec); 
-    background: linear-gradient(#9bb6e5, #d4daec); 
+    background: -webkit-linear-gradient(#9bb6e5, #d4daec);
+    background: -o-linear-gradient(#9bb6e5, #d4daec);
+    background: -moz-linear-gradient(#9bb6e5, #d4daec);
+    background: linear-gradient(#9bb6e5, #d4daec);
 }
 
 #logo {
@@ -23,16 +27,17 @@ h1, h2, h3, h4, p, li, form {
     height: 50px;
     margin: -10px;
     margin-left: 50px;
+    
 }
 
 #mytopnav {
-    text-align: center; 
-    margin: -40px;
-    font-size: 40px;  
+    text-align: center;
+    margin: -46px;
+    font-size: 40px;
     font-family: Roboto;
     src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
-    font-style:italic;
-    
+    font-style: italic;
+
 }
 
 .topnav a {
@@ -64,14 +69,8 @@ h2 {
     text-align: center;
 }
 
-h4 {
-}
+h4 {}
 
-#ops {
-    margin: 80px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
 #opskrift1 {
     grid-area: e;
@@ -117,6 +116,10 @@ input[type=text] {
     border-radius: 100px;
 }
 
+#regel {
+    text-align: center;
+    font-size: 15px;
+}
 
 
 #banner3 {
@@ -143,31 +146,86 @@ input[type=text] {
 #video {
     display: block;
     margin: 0 auto;
-    margin-top: 10px;    
-}
-
-#gridwrap {
-    display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-        grid-template-areas: 
-        "a a b b c c"
-        "d d d d d d"
-        "f f f e e e"
-        "h h h i i i"
-        "k k k j j j"
-        "l l l l l l"
-        "m m m m m m"
-        "n n n n n n"
-        "o o o p p p"
-            
+    margin-top: 10px;
+    width: 40vw;
 }
 
 img {
     width: 100%;
 }
 
-#gridwrap section, #gridwrap article, #gridwrap form {
+#gridwrap section,
+#gridwrap article,
+#gridwrap form {
     border-style: solid;
-} 
+}
+
+#gridwrap {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas: 
+        "a a b b c c" 
+        "d d d d d d" 
+        "f f f e e e" 
+        "h h h i i i" 
+        "k k k j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o p p p"
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    #gridwrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a a a a" 
+        "b b b b b b" 
+        "c c c c c c" 
+        "d d d d d d" 
+        "f f f f f f" 
+        "e e e e e e" 
+        "i i i i i i" 
+        "h h h h h h" 
+        "k k k k k k" 
+        "j j j j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o o o o" 
+        "p p p p p p"
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    #gridwrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a b b b" 
+        "c c c c c c" 
+        "d d d d d d" 
+        "f f f f f f" 
+        "e e e e e e" 
+        "i i i i i i" 
+        "h h h h h h" 
+        "k k k k k k" 
+        "j j j j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o o o o" 
+        "p p p p p p"
+    }
+
+    #utzzz {
+        margin: 0px;
+        height: 250px;
+        display: none;
+    }
+
+    
+}
 
