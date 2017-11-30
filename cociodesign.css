@@ -13,14 +13,39 @@ h1, h2, h3, h4, p, li, form {
     font-style: italic;
 }
 
-.topnav {
-    height: 50px;
-    background: #9bb6e5;
+#navbar {
+    margin:-10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9bb6e5;
     background: -webkit-linear-gradient(#9bb6e5, #d4daec);
     background: -o-linear-gradient(#9bb6e5, #d4daec);
     background: -moz-linear-gradient(#9bb6e5, #d4daec);
     background: linear-gradient(#9bb6e5, #d4daec);
 }
+
+#ban1, #ban2, #ban3 {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+    
+   
 
 #logo {
     width: 80px;
@@ -28,22 +53,6 @@ h1, h2, h3, h4, p, li, form {
     margin: -10px;
     margin-left: 50px;
     
-}
-
-#mytopnav {
-    text-align: center;
-    margin: -46px;
-    font-size: 40px;
-    font-family: Roboto;
-    src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
-    font-style: italic;
-
-}
-
-.topnav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
 }
 
 #kakao {
