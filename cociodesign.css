@@ -1,80 +1,300 @@
+body {
+    background-color: black;
+}
+
 #header {
     width: 100%;
-    position: fixed; 
+    position: fixed;
 }
 
-.topnav {
-    height: 50px;
-    background: #9bb6e5;
-    background: -webkit-linear-gradient(#9bb6e5, #d4daec); 
-    background: -o-linear-gradient(#9bb6e5, #d4daec); 
-    background: -moz-linear-gradient(#9bb6e5, #d4daec); 
-    background: linear-gradient(#9bb6e5, #d4daec); 
+h1, h2, h3, h4, p, li, form {
+    font-family: Roboto;
+    src: url(Kontrolpanel\Udseende og personlige indstillinger\Skrifttyper);
+    font-style: italic;
 }
 
-#logo {
+#navbar {
+    margin:-10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9bb6e5;
+    background: -webkit-linear-gradient(#9bb6e5, #d4daec);
+    background: -o-linear-gradient(#9bb6e5, #d4daec);
+    background: -moz-linear-gradient(#9bb6e5, #d4daec);
+    background: linear-gradient(#9bb6e5, #d4daec);
+}
+
+#ban1, #ban2, #ban3, #home {
+    float: left;
+}
+
+#home {
+    height: 10px;
     width: 80px;
-    height: 50px;
-    margin: -10px;
 }
 
-#mytopnav {
-    text-align: center; 
-    margin: -40px;
-    font-size: 40px;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: crimson;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 #kakao {
     grid-area: a;
+    margin-top: 40px;
 }
 
 #kon {
     grid-area: b;
+    margin-top: 40px;
 }
 
 #utzzz {
     grid-area: c;
-}
-
-#peanut {
-    grid-area: d;
-}
-
-#hindbær {
-    grid-area: e;
-}
-
-#karamel {
-    grid-area: f;
+    margin-top: 40px;
 }
 
 #banner1 {
-    grid-area: g;
+    grid-area: d;
 }
 
-#banner2 {
+h2 {
+    text-align: center;
+}
+
+h4 {}
+
+
+#opskrift1 {
+    grid-area: e;
+}
+
+#peanut {
+    grid-area: f;
+}
+
+#opskrift2 {
     grid-area: h;
 }
 
-#banner3 {
+#hind {
     grid-area: i;
 }
 
-#agewrap {
+#opskrift3 {
+    grid-area: j;
+}
+
+#karamel {
+    grid-area: k;
+}
+
+#banner2 {
+    grid-area: l;
+}
+
+#konkurrencetekst {
+    grid-area: m;
+    width: 100%;
+    height: 100%;
+    background-color: #c3c4c7;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin-top: 18px;
+    height: 5px;
+    border-radius: 100px;
+}
+
+#regel {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+#banner3 {
+    grid-area: n;
+}
+
+#utztekst {
+    grid-area: o;
+    text-align: center;
+    background-image: url(../PC/utzbannerbaggrund.jpg);
+}
+
+#omutz {
+    margin: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#utzvideo {
+    grid-area: p;
+    background-image: url(../PC/utzbannerbaggrund2.jpg);
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40vw;
+}
+
+img {
+    width: 100%;
+}
+
+#gridwrap section,
+#gridwrap article,
+#gridwrap form {
+    border-style: solid;
+}
+
+}
+    #peatekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    #hindtekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+     #karameltekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+#gridwrap {
+    overflow-x: hidden;
     display: grid;
-        grid-gap: 0 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas: 
+        "a a b b c c" 
+        "d d d d d d" 
+        "f f f e e e" 
+        "h h h i i i" 
+        "k k k j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o p p p"
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    #gridwrap {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        ". . . . . ."
-        "d b b b b b"
-        "d c c c c f"
-        "d c c c c f"
-        "d e e e e f"
-        ". e e e e ."
-            
-            
-            
-            
-            
-            .
+        "a a a a a a" 
+        "b b b b b b" 
+        "c c c c c c" 
+        "d d d d d d" 
+        "f f f f f f" 
+        "e e e e e e" 
+        "i i i i i i" 
+        "h h h h h h" 
+        "k k k k k k" 
+        "j j j j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o o o o" 
+        "p p p p p p"
+    }
+    #home {
+        display: none
+    }
+    #kon {
+        margin: 0px;
+    }
+    #utzzz {
+        margin: 0px;
+    }
+    
+    #omutz {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+    
+       #video {        
+        width: 80vw;
+    }
+
+    #peatekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #hindtekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+     #karameltekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    #gridwrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a b b b" 
+        "c c c c c c" 
+        "d d d d d d" 
+        "f f f f f f" 
+        "e e e e e e" 
+        "i i i i i i" 
+        "h h h h h h" 
+        "k k k k k k" 
+        "j j j j j j" 
+        "l l l l l l" 
+        "m m m m m m" 
+        "n n n n n n" 
+        "o o o o o o" 
+        "p p p p p p"
+    }
+
+    #utzzz {
+        margin: 0px;
+        height: 250px;
+    }
+    
+    #video {        
+        width: 80vw;
+    }
+    #peatekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    #hindtekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+     #karameltekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+

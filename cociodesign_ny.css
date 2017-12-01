@@ -1,0 +1,113 @@
+#header {
+    width: 100%;
+    position:fixed;
+}
+
+.topnav {
+    height: 50px;
+    background: #9bb6e5;
+    background: -webkit-linear-gradient(#9bb6e5, #d4daec); 
+    background: -o-linear-gradient(#9bb6e5, #d4daec); 
+    background: -moz-linear-gradient(#9bb6e5, #d4daec); 
+    background: linear-gradient(#9bb6e5, #d4daec); 
+}
+
+#logo {
+    width: 80px;
+    height: 50px;
+    margin: -10px;
+    margin-left: 50px;
+}
+
+#mytopnav {
+    text-align: center; 
+    margin: -40px;
+    font-size: 40px;  
+    
+}
+
+.topnav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#kakao {
+    grid-area: a;
+}
+
+#kon {
+    grid-area: b;
+}
+
+#utzzz {
+    grid-area: c;
+}
+
+#
+
+#banner1 {
+    grid-area: d;
+}
+
+#opskrift1 {
+    grid-area: e;
+}
+
+#peanut {
+    grid-area: f;
+}
+
+#opskrift2 {
+    grid-area: h;
+}
+
+#hindbær {
+    grid-area: i;
+}
+
+#opskrift3 {
+    grid-area: j;
+}
+
+#karamel {
+    grid-area: k;
+}
+
+#banner2 {
+    grid-area: l;
+}
+
+#konkurrencetekst {
+    grid-area: m;
+}
+
+#banner3 {
+    grid-area: n;
+}
+
+#utztekst {
+    grid-area: o;
+}
+
+#utzvideo {
+    grid-area: p;
+}
+
+#gridwrap {
+    display: grid;
+        grid-gap: 0 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        grid-template-areas: 
+        "a a b b c c"
+        "d d d d d d"
+        "f f f e e e"
+        "h h h i i i"
+        "k k k j j j"
+        "l l l l l l"
+        "m m m m m m"
+        "n n n n n n"
+        "o o o o p p"
+            
+}
