@@ -25,34 +25,29 @@ h1, h2, h3, h4, p, li, form {
     background: linear-gradient(#9bb6e5, #d4daec);
 }
 
-#ban1, #ban2, #ban3 {
+#ban1, #ban2, #ban3, #home {
     float: left;
+}
+
+#home {
+    height: 10px;
+    width: 80px;
 }
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: lightgray;
+    background-color: crimson;
 }
 
 .active {
     background-color: #4CAF50;
-}
-    
-   
-
-#logo {
-    width: 80px;
-    height: 50px;
-    margin: -10px;
-    margin-left: 50px;
-    
 }
 
 #kakao {
@@ -169,6 +164,22 @@ img {
     border-style: solid;
 }
 
+}
+    #peatekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    #hindtekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+     #karameltekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
 #gridwrap {
     overflow-x: hidden;
     display: grid;
@@ -206,6 +217,40 @@ img {
         "o o o o o o" 
         "p p p p p p"
     }
+    #home {
+        display: none
+    }
+    #kon {
+        margin: 0px;
+    }
+    #utzzz {
+        margin: 0px;
+    }
+    
+    #omutz {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+    
+       #video {        
+        width: 80vw;
+    }
+
+    #peatekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    #hindtekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+     #karameltekst {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
@@ -232,9 +277,24 @@ img {
     #utzzz {
         margin: 0px;
         height: 250px;
-        display: none;
     }
-
     
+    #video {        
+        width: 80vw;
+    }
+    #peatekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    #hindtekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+     #karameltekst {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
 }
 
